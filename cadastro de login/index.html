@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylr.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>página de login</h1>
+    <div id="titulo"><h1>página de login</h1></div>
+    
   <div id="informacoes">
       <h2>insira os dados</h2>
-      
+
       <div class="dadosDelogin">
          <label for="">usuario</label>
          <input type="text" name="" id="input-usuario">
@@ -24,9 +26,11 @@
          <label for="">senha</label>
          <input type="text" name="" id="input-senha">
       </div>
+
+      <button onclick="login()">login</button>
   </div>
  
-    <button onclick="login()">login</button>
+    <!-- <button onclick="login()">login</button> -->
 
 
     <script src="script.js"></script>
