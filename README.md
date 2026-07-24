@@ -5,7 +5,7 @@
 
  Tela de login: o usuario digita o nome ou email e uma senha para acessar o sistema de gerenciamento de estoque.
 
- Sistema de gerenciamento de estoque: o site permite cadastrar, pesquisar e escluir produtos do sistema.
+ Sistema de gerenciamento de estoque: o site permite cadastrar, pesquisar, atualizar e escluir produtos do sistema.
 
  esse projeto foi pensado para uma loja de games que precisa gerenciar o seu estoque de produtos.
 
@@ -21,7 +21,6 @@
 
 ## Licença
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-
 
 
 
