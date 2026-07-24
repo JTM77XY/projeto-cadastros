@@ -6,7 +6,7 @@
  }
 
 h1{
-    background-color: rgb(0, 204, 255);
+    background-color: rgb(189, 24, 24);
     text-align: center;
     padding: 40px;
 }
@@ -15,7 +15,7 @@ h1{
 #informacoes{
     margin: 40px;
     justify-self: center; 
-    background-color: aqua; /* muda a cor do meu campo informacoes */
+    background-color: rgb(224, 14, 14);  /* muda a cor do meu campo informacoes */
     width: 40%; /* meu campo informacoes ocupa uma parte da página */
     display: flex; 
     flex-direction: column;
@@ -23,8 +23,8 @@ h1{
     gap: 10px;
     padding: 25px;
     border-radius: 10px; /* altera as bordas do meu campo informacoes */
-    
 }
+   
 
 .dadosDelogin{
     display: flex;
