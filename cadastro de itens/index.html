@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>cadastro d estoque</title>
 </head>
 <body>
-    <h1>cadastro de estoque</h1>
-    <div id="caracteristicas">
+    <h1>🕹️cadastro de estoque🕹️</h1>
+  <div id="todos">
+      <h2>insira os dados</h2>
+      <div id="caracteristicas">
         <div>
-          <div>
+          <div class="informacoes">
              <label for="">produto</label>
-             <input type="text">
+             <input id="input-produto" type="text">
           </div>
 
-          <div>
+          <div class="informacoes">
              <label for="">marca</label>
-             <input type="text">
+             <input id="input-marca" type="text">
+          </div>
+
+          <div class="informacoes">
+            <label for="">estoque maximo</label>
+            <input id="input-maximo" type="number">
           </div>
         </div>
 
         <div>
-            <div>
+            <div class="informacoes">
              <label for="">quantidade</label>
-             <input type="text">
+             <input id="input-quantidade" type="number">
             </div>
 
-            <div>
+            <div class="informacoes">
              <label for="">preço</label>
-             <input type="text">
+             <input id="input-preço" type="number">
+            </div>
+
+            <div class="informacoes">
+              <label for="">estoque minimo</label>
+              <input id="input-minimo" type="number">
             </div>
         </div>
-    </div>
+      </div>
+      <div id="botoes">
+       <button>cadastrar</button>
+       <button>pesquisar</button>
+       <button>atualizar</button>
+       <button>escluir</button>
+     </div>
 
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- posição absoluta: para mover imagens -->
+

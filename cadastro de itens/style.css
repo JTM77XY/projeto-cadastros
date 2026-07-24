@@ -3,3 +3,49 @@
   padding: 0;
   box-sizing: border-box;
  }
+
+ body{
+ /* background-color: rgb(131, 74, 74); */
+ }
+
+
+ h1{
+  background-color: rgb(190, 22, 22);
+  text-align: center;
+  padding: 40px;
+  /* margin: 5px; */
+ }
+
+
+/* h2{ */
+  /* text-align: center; */
+/* } */
+
+
+ #todos{
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: rgba(201, 9, 9, 0.966);
+  margin: 60px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+ }
+ 
+
+#caracteristicas{
+  /* justify-self: center; */
+  display: flex;
+  margin: 15px;
+}
+
+.informacoes{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
