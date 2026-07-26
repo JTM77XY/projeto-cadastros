@@ -66,3 +66,8 @@ elementos: h2, div caracteristicas, div do ID, div dos botões. */
 #botoes{
   padding: 15px;
 }
+
+
+#esconderID{
+  display: none;
+}

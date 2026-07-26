@@ -2,13 +2,14 @@ let produtos = []  // array onde os dados digitados nos inputs vão ser armazena
 
 
 function limparformulario(){ // essa função limpa o formulario
+  document.getElementById('IDunico').value = ''
   document.getElementById('informarproduto').value = ''
   document.getElementById('input-produto').value = ''
   document.getElementById('input-marca').value = ''
-  Number(document.getElementById('input-quantidade').value = '')
-  Number(document.getElementById('input-preco').value = '')
-  Number(document.getElementById('input-minimo').value = '')
-  Number(document.getElementById('input-maximo').value = '')
+  document.getElementById('input-quantidade').value = ''
+  document.getElementById('input-preco').value = ''
+  document.getElementById('input-minimo').value = ''
+  document.getElementById('input-maximo').value = ''
 }
 
 
@@ -20,7 +21,7 @@ function cadastrarproduto(){ // essa função joga as informações digitadas no
         quantidade: Number(document.getElementById('input-quantidade').value),
         preco: Number(document.getElementById('input-preco').value),
         minimo: Number(document.getElementById('input-minimo').value),
-        maximo: Number(document.getElementById('input-maximo').value),
+        maximo: Number(document.getElementById('input-maximo').value)
     }
     produtos.push(novoproduto)
     limparformulario()
@@ -32,23 +33,47 @@ function pesquisar(){ // essa função pega informações especificas que ja est
  let produtopesquisado = document.getElementById('informarproduto').value
  for(let i = 0; i<produtos.length; i++){
     if(produtopesquisado == produtos[i].produto){
+         document.getElementById('IDunico').value = produtos[i].id
          document.getElementById('input-produto').value = produtos[i].produto
          document.getElementById('input-marca').value = produtos[i].marca
-         Number(document.getElementById('input-quantidade').value = produtos[i].quantidade) 
-         Number(document.getElementById('input-preco').value = produtos[i].preco) 
-         Number(document.getElementById('input-minimo').value = produtos[i].minimo) 
-         Number(document.getElementById('input-maximo').value = produtos[i].maximo) 
+         document.getElementById('input-quantidade').value = produtos[i].quantidade
+         document.getElementById('input-preco').value = produtos[i].preco
+         document.getElementById('input-minimo').value = produtos[i].minimo
+         document.getElementById('input-maximo').value = produtos[i].maximo 
     }
-
  }
 }
 
 
 
-function atualizar(){}
+function atualizar(){
+ let IDproduto = Number(document.getElementById('IDunico').value)
+ for(let i = 0; i < produtos.length; i++){
+    if(IDproduto == produtos[i].id){
+       produtos[i].id = document.getElementById('IDunico').value
+       produtos[i].produto = document.getElementById('input-produto').value
+       produtos[i].marca = document.getElementById('input-marca').value
+       produtos[i].quantidade = document.getElementById('input-quantidade').value
+       produtos[i].preco = document.getElementById('input-preco').value
+       produtos[i].minimo = document.getElementById('input-minimo').value
+       produtos[i].maximo = document.getElementById('input-maximo').value
+    }
+ }
+ console.log(produtos)
+ limparformulario()
+}
 
 
 
-
-function escluir(){}
+function escluir(){
+ let IDproduto = Number(document.getElementById('IDunico').value)
+ for(let i = 0; i<produtos.length; i++){
+     if(IDproduto == produtos[i].id){
+        console.log(produtos[i])
+        produtos.splice(i,1)
+        
+     }
+ }
+ limparformulario()
+}
 

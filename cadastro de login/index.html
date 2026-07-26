@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylr.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
   <h1>acesso ao gerenciamento de estoque</h1>
-    
   <div id="informacoes">
       <h2>insira os dados</h2>
 
@@ -17,22 +16,39 @@
          <input type="text" name="" id="input-usuario">
       </div>
 
-      <!-- <div class="dadosDeLogin">
-         <label for="">email</label>
-         <input type="text" name="" id="input-email">
-      </div> -->
-
       <div class="dadosDelogin">
          <label for="">senha</label>
          <input type="text" name="" id="input-senha">
       </div>
-
+       
       <button onclick="login()">login</button>
+      <button onclick="abrircadastro()">habilitar sessão de cadastro </button>
   </div>
- 
-    <!-- <button onclick="login()">login</button> -->
+
+  <div id="escondercadastro">
+    <h2>insira os dados</h2>
+    <div class="dadosDecadastro">
+      <label for="">crie um usuario</label>
+      <input type="text">
+    </div>
+
+    <div class="dadosDecadastro">
+     <label for="">crie um email</label>
+     <input type="text">
+    </div>
+
+    <div class="dadosDecadastro">
+      <label for="">crie uma senha</label>
+      <input type="text">
+    </div>
+    <button>cadastrar</button>
+  </div>
 
 
-    <script src="script.js"></script>
+
+
+
+
+ <script src="script.js"></script>
 </body>
 </html>
