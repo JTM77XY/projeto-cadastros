@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <title>cadastro d estoque</title>
 </head>
-<body>
+ <body>
     <h1>🕹️cadastro de estoque🕹️</h1>
-  <div id="todos">
+   <div id="todos">
       <h2>insira os dados</h2>
       <div id="caracteristicas">
         <div>
@@ -36,7 +36,7 @@
 
             <div class="informacoes">
              <label for="">preço</label>
-             <input id="input-preço" type="number">
+             <input id="input-preco" type="number">
             </div>
 
             <div class="informacoes">
@@ -45,16 +45,32 @@
             </div>
         </div>
       </div>
-      <div id="botoes">
-       <button>cadastrar</button>
-       <button>pesquisar</button>
-       <button>atualizar</button>
-       <button>escluir</button>
-     </div>
 
-  </div>
+      <div>
+        <label for="">id</label>
+        <input type="text">
+      </div>
+
+      <div>
+        <button onclick="cadastrarproduto()">cadastrar</button>
+        <button onclick="atualizar()">atualizar</button>
+        <button onclick="escluir()">escluir</button>
+      </div>
+   </div>
+
+    <div id="manipularestoque">
+      <div id="manipularproduto">
+       <label for="">informe o produto</label>
+       <input id="informarproduto" type="text">
+      </div>
+
+     <div id="botoes">
+       <button onclick="pesquisar()">pesquisar</button>
+     </div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+ </body>
 </html>
 
 

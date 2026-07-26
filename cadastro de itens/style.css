@@ -4,12 +4,8 @@
   box-sizing: border-box;
  }
 
- body{
- /* background-color: rgb(131, 74, 74); */
- }
-
-
- h1{
+ /*h1: mauda a cor para vermenho, alinha o texto no centro da página e distancia o texto da borda marcada pela cor.  */
+ h1{ 
   background-color: rgb(190, 22, 22);
   text-align: center;
   padding: 40px;
@@ -21,7 +17,8 @@
   /* text-align: center; */
 /* } */
 
-
+/*todos: pega todos os elementos que estão dentro dessa div alinha eles no centro da pagina e altera a posição deles. 
+elementos: h2, div caracteristicas, div do ID, div dos botões. */
  #todos{
   justify-self: center;
   display: flex;
@@ -29,15 +26,15 @@
   /* justify-content: center; */
   align-items: center;
   background-color: rgba(201, 9, 9, 0.966);
-  margin: 60px;
+  margin: 50px;
   padding: 10px;
   width: 400px;
   border-radius: 10px;
  }
  
-
+/* caracteristicas: pega os 6 inputs com classe informacoes e faz uma coluna com 3 inputs e outra coluna com 3 inputs
+ e depois coloca coloca uma coluna do lado da outra. também afasta as colunas dos outros elementos dentro da área vermelha. */
 #caracteristicas{
-  /* justify-self: center; */
   display: flex;
   margin: 15px;
 }
@@ -49,3 +46,23 @@
   margin: 5px;
 }
 
+#manipularestoque{
+  justify-self: center;
+  background-color: rgb(204, 7, 7);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#manipularproduto{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#botoes{
+  padding: 15px;
+}

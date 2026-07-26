@@ -45,7 +45,7 @@ function login(){
 
  for(let i = 0; i<cadastro.length; i++){
    if(dadoslogin.nome == cadastro[i].nome || dadoslogin.nome == cadastro[i].email && dadoslogin.senha == cadastro[i].senha){
-    window.location.href = "http://127.0.0.1:5500/index.html"
+    window.location.href = "http://127.0.0.1:5500/cadastro%20de%20itens/index.html"
    }else{
     alert('asseso negado')
    }
