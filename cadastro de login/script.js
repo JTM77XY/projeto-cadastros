@@ -64,3 +64,5 @@ function abrircadastro(){ // essa função faz aparecer tela de cadastro paara d
       alert('acesso negado')
     }
 }
+
+function cadastrar(){}
