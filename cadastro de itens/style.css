@@ -68,6 +68,25 @@ elementos: h2, div caracteristicas, div do ID, div dos botões. */
 }
 
 
+#visualizar{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.card-produtos{
+  background-color: rgb(228, 98, 11);
+  width: 15%;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
 #esconderID{
   display: none;
 }
+

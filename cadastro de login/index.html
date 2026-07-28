@@ -9,7 +9,7 @@
 <body>
   <h1>acesso ao gerenciamento de estoque</h1>
   <div id="informacoes">
-      <h2>insira os dados</h2>
+      <h2>insira as credenciais</h2>
 
       <div class="dadosDelogin">
          <label for="">usuario ou email</label>
@@ -29,19 +29,21 @@
     <h2>insira os dados</h2>
     <div class="dadosDecadastro">
       <label for="">crie um usuario</label>
-      <input type="text">
+      <input id="usuariocd" type="text">
     </div>
 
     <div class="dadosDecadastro">
      <label for="">crie um email</label>
-     <input type="text">
+     <input id="emailcd" type="text">
     </div>
 
     <div class="dadosDecadastro">
       <label for="">crie uma senha</label>
-      <input type="text">
+      <input id="senhacd" type="text">
     </div>
+
     <button onclick="cadastrar()">cadastrar</button>
+    <button onclick="fecharcadastro()">fechar cadastro</button>
   </div>
 
  <script src="script.js"></script>

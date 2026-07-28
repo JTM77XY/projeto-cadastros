@@ -46,11 +46,12 @@ function login(){ // essa função redireciona para outra página de os dados di
   for(let i = 0; i<cadastro.length; i++){
    if(dadoslogin.nome == cadastro[i].nome && dadoslogin.senha == cadastro[i].senha || dadoslogin.nome == cadastro[i].email && dadoslogin.senha == cadastro[i].senha){
     window.location.href = "http://127.0.0.1:5500/cadastro%20de%20itens/index.html"
-   }else{
-    alert('asseso negado')
+   }else if(dadoslogin.nome == cadastro[i].nome && dadoslogin.senha != cadastro[i].senha || dadoslogin.nome == cadastro[i].email && dadoslogin.senha != cadastro[i].senha){
+    alert('acesso negado')
    }
 
   }
+  limparlogin()
 }
 
 
@@ -63,6 +64,37 @@ function abrircadastro(){ // essa função faz aparecer tela de cadastro paara d
   }else{
       alert('acesso negado')
     }
+    limparlogin()
 }
 
-function cadastrar(){}
+
+function cadastrar(){
+  const dados = {
+    nome: document.getElementById('usuariocd').value,
+    email: document.getElementById('emailcd').value,
+    senha: Number(document.getElementById('senhacd').value),
+ }
+ cadastro.push(dados)
+ limparcadastro()
+}
+
+
+
+function fecharcadastro(){
+   let fechar = document.getElementById('escondercadastro').style.display = 'none'
+}
+
+
+
+function limparlogin(){
+  document.getElementById('input-usuario').value = '',
+  document.getElementById('input-senha').value = ''
+}
+
+
+
+function limparcadastro(){
+    document.getElementById('usuariocd').value = '',
+    document.getElementById('emailcd').value = '',
+    document.getElementById('senhacd').value = ''
+}
