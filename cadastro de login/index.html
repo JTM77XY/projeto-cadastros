@@ -7,26 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-  <h1>acesso ao gerenciamento de estoque</h1>
+  <h1>🎮acesso ao gerenciamento de estoque🎮</h1>
+
   <div id="informacoes">
-      <h2>insira as credenciais</h2>
+    <h2>insira as credenciais</h2>
 
-      <div class="dadosDelogin">
-         <label for="">usuario ou email</label>
-         <input type="text" name="" id="input-usuario">
-      </div>
+    <div class="dadosDelogin">
+      <label for="">usuario ou email</label>
+      <input type="text" name="" id="input-usuario">
+    </div>
 
-      <div class="dadosDelogin">
-         <label for="">senha</label>
-         <input type="text" name="" id="input-senha">
-      </div>
-       
+    <div class="dadosDelogin">
+      <label for="">senha</label>
+      <input type="text" name="" id="input-senha">
+    </div>
+
+    <div id="botoesdologin" class="dadosDelogin">
       <button onclick="login()">login</button>
-      <button onclick="abrircadastro()">habilitar sessão de cadastro </button>
+      <button onclick="abrircadastro()">sessão de cadastro</button>
+    </div>
   </div>
 
   <div id="escondercadastro">
-    <h2>insira os dados</h2>
+    <div class="dadosDecadastro">
+      <h2>insira os dados</h2>
+    </div>
+     
     <div class="dadosDecadastro">
       <label for="">crie um usuario</label>
       <input id="usuariocd" type="text">
@@ -42,10 +48,12 @@
       <input id="senhacd" type="text">
     </div>
 
-    <button onclick="cadastrar()">cadastrar</button>
-    <button onclick="fecharcadastro()">fechar cadastro</button>
+    <div id="botoesdocadastro" class="dadosDecadastro">
+      <button onclick="cadastrar()">cadastrar</button>
+      <button onclick="fecharcadastro()">fechar cadastro</button>
+    </div>
   </div>
 
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

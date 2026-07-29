@@ -20,7 +20,7 @@ h1{
     display: flex; 
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /*distancia as divs */
     padding: 25px;
     border-radius: 10px; /* altera as bordas do meu campo informacoes */
 }
@@ -31,7 +31,6 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 
@@ -49,4 +48,28 @@ h1{
     align-items: center;
     margin: 5px;
     padding: 5px;
+    
 }
+
+#botoesdologin{ 
+    gap: 10px; /*distancia os botoes */
+}
+
+#botoesdocadastro{ 
+    gap: 10px; /*distancia os botoes */
+}  
+
+button{
+    padding: 3px;
+    background-color: rgb(224, 131, 9);
+}
+
+button:hover{
+    transform:scale(1.2) ;
+}
+
+
+
+
+/* gap distancia dois elementos. exemplo: duas divs ou dois botoes. */
+/*distancia os botoes */

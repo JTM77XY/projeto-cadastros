@@ -1,5 +1,14 @@
 let produtos = []  // array onde os dados digitados nos inputs vão ser armazenados.
 
+function salvardados(){
+   localStorage.setItem('produtos', JSON.stringify(produtos))
+}
+
+function carregardados(){
+   produtos = JSON.parse(localStorage.getItem('produtos')) || [] 
+}
+
+
 
 function limparformulario(){ // essa função limpa o formulario
   document.getElementById('IDunico').value = ''
@@ -14,6 +23,7 @@ function limparformulario(){ // essa função limpa o formulario
 
 
 function cadastrarproduto(){ // essa função joga as informações digitadas nos inputs para dentro do array 'produtos'.
+   //  carregardados()
     const novoproduto = {
         id: Date.now(),
         produto: document.getElementById('input-produto').value,
@@ -29,6 +39,7 @@ function cadastrarproduto(){ // essa função joga as informações digitadas no
     console.log(produtos)
     mostrarcastro()
     MinimoMaximo()
+   //  salvardados()
 }
 
 function mostrarcastro(){
@@ -83,6 +94,7 @@ function atualizar(){
  mostrarcastro()
  MinimoMaximo()
  limparformulario()
+ salvardados()
 }
 
 

@@ -84,9 +84,29 @@ elementos: h2, div caracteristicas, div do ID, div dos botões. */
   border-radius: 10px;
 }
 
-
-
 #esconderID{
   display: none;
 }
 
+button{
+  background-color: rgb(235, 114, 15);
+  padding: 5px;
+}
+
+button:hover{
+  transform:scale(1.2) ;
+}
+
+
+#imagem1{
+  position: absolute;
+  top:120px;
+  left: 10px;
+}
+
+#imagem2{
+  position: absolute;
+  top: 120px;
+  /* left: 1140px; */
+  right: 10px;
+}
