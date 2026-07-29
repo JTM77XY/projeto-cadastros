@@ -38,7 +38,6 @@ function cadastrarproduto(){ // essa função joga as informações digitadas no
     limparformulario()
     console.log(produtos)
     mostrarcastro()
-    MinimoMaximo()
    //  salvardados()
 }
 
@@ -92,7 +91,6 @@ function atualizar(){
  }
  console.log(produtos)
  mostrarcastro()
- MinimoMaximo()
  limparformulario()
  salvardados()
 }
@@ -111,18 +109,34 @@ function escluir(){
 }
 
 
+
 function MinimoMaximo(){
-   let mn 
+   
    for(let i = 0; i <produtos.length; i++){
       if(produtos[i].quantidade > produtos[i].maximo && produtos[i].quantidade > produtos[i].minimo){
-         // alert('estoque cheio')
-         mn = 'estoque cheio'
+         alert(`${produtos[i].produto}: estoque acima do limite`)
       }else if(produtos[i].quantidade < produtos[i].minimo && produtos[i].quantidade < produtos[i].maximo){
-         // alert('estoque abaixo do limite')
-         mn = 'estoque abaixo do limite'
+         alert(`${produtos[i].produto}: estoque abaixo do limite`)
       }
    }
-   alert(mn)
 }
 
 
+
+
+
+
+
+// function MinimoMaximo(){
+//    let mn
+//    for(let i = 0; i <produtos.length; i++){
+//       if(produtos[i].quantidade > produtos[i].maximo && produtos[i].quantidade > produtos[i].minimo){
+//          // alert('estoque cheio')
+//          mn = 'estoque acima do limite'
+//       }else if(produtos[i].quantidade < produtos[i].minimo && produtos[i].quantidade < produtos[i].maximo){
+//          // alert('estoque abaixo do limite')
+//          mn = 'estoque abaixo do limite'
+//       }
+//    }
+//    alert(mn)
+// }
