@@ -50,8 +50,6 @@ function mostrarcastro(){
           <p>marca:${produtos[i].marca}</p>
           <p>quantidade:${produtos[i].quantidade}</p>
           <p>preço:${produtos[i].preco}</p>
-          <p>estoque minimo:${produtos[i].minimo}</p>
-          <p>estoque maximo:${produtos[i].maximo}</p>
         </div>
      `
   }
@@ -106,6 +104,7 @@ function escluir(){
      }
  }
  limparformulario()
+ mostrarcastro()
 }
 
 
